@@ -14,9 +14,9 @@ const amadeus = new Amadeus ({
 const FlightSearch = async () => {
     try {
         const flightOffersResponse = await amadeus.shopping.flightOffersSearch.get({
-            originLocationCode: "SYD",
-            destinationLocationCode: "BKK",
-            departureDate: "2024-12-02",
+            originLocationCode: "CMB",
+            destinationLocationCode: "MAA",
+            departureDate: "2024-11-27",
             adults: "1",
         })
         console.log("Flight Offers Response:", flightOffersResponse.data);
